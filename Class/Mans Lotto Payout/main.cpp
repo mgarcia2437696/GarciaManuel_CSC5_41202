@@ -18,13 +18,7 @@ using namespace std;
 //Execution Begins Here
 int main(int argc, char** argv) {
     //Declare and initialize variables
-    unsigned int jckPt;
-    unsigned char lmpSump=62;
-    unsigned int lmpSum;
-    unsigned char stfedTx=52;
-    unsigned int amtATX;
-    unsigned char blnch=50;
-    unsigned int manTtl;
+    int jckPt, lmpSump=62, lmpSum, stfedTx=52, amtATX, blnch=50, manTtl
     
     //Input data
     cout<<"What is the Jackpot amount?"<<endl;
