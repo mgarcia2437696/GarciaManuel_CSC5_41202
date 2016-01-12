@@ -17,7 +17,7 @@ using namespace std;
 //Execution Begins Here
 int main(int argc, char** argv) {
     //Declare and initialize variables
-    int nPods, npPod, tPeas
+    unsigned int nPods; npPod; tPeas;
     //Input data
     
     //Calculate or map inputs to outputs
@@ -30,7 +30,7 @@ int main(int argc, char** argv) {
     
     cout<<"Enter the number of peas in a pod:"<<endl;
     cin>> npPod;
-    int tPeas=nPods*npPod;
+    unsigned int tPeas=nPods*npPod;
     cout<<"If you have ";
     cout<<nPods;
     cout<<"pea pods"<<endl;

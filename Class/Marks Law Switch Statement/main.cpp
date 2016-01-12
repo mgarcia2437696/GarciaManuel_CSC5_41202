@@ -1,7 +1,7 @@
 /* 
     Author: Manuel Garcia
-    Created on January 9, 2016, 4:18 PM
-    Purpose:  Peas in all pods
+    Created on January 12, 2016, 4:18 PM
+    Purpose:  Switch Statement Pool Breakers
  */
 
 //System Libraries
@@ -17,125 +17,65 @@ using namespace std;
 //Execution Begins Here
 int main(int argc, char** argv) {
     //Declare and initialize variables
-    unsigned int score;
+    unsigned int hrswkd;
     //Input data
-    cout<<"Enter your score:"<<endl;
-    cin>>score;
+    cout<<"Enter the hours worked by Breakers:"<<endl;
+    cin>>hrswkd;
     
-    switch (score)
+    switch (hrswkd)
     //Calculate or map inputs to outputs
         {case 1: 
         case 2:
         case 3:
         case 4:
         case 5:
+            cout<<"Cost of Breakers: $4000"<<endl;
+            break;
         case 6:
+            cout<<"Cost of Breakers: $4800"<<endl;
+            break;
         case 7:
+            cout<<"Cost of Breakers: $5600"<<endl;
+            break;
         case 8:
+            cout<<"Cost of Breakers: $6400"<<endl;
+            break;
         case 9:
+            cout<<"Cost of Breakers: $7200"<<endl;
+            break;
         case 10:
+            cout<<"Cost of Breakers: $8000"<<endl;
+            break;
         case 11:
+            cout<<"Cost of Breakers: $8800"<<endl;
+            break;
         case 12:
+            cout<<"Cost of Breakers: $9600"<<endl;
+            break;
         case 13:
+            cout<<"Cost of Breakers: $10400"<<endl;
+            break;
         case 14:
+            cout<<"Cost of Breakers: $11200"<<endl;
+            break;
         case 15:
+            cout<<"Cost of Breakers: $12000"<<endl;
+            break;
         case 16:
+            cout<<"Cost of Breakers: $12800"<<endl;
+            break;
         case 17:
+            cout<<"Cost of Breakers: $13600"<<endl;
+            break;
         case 18:
+            cout<<"Cost of Breakers: $14400"<<endl;
+            break;
         case 19:
+            cout<<"Cost of Breakers: $15200"<<endl;
+            break;
         case 20:
-        case 21:
-        case 22:
-        case 23:
-        case 24:
-        case 25:
-        case 26:
-        case 27:
-        case 28:
-        case 29:
-        case 30:
-        case 31:
-        case 32:
-        case 33:
-        case 34:
-        case 35:
-        case 36:
-        case 37:
-        case 38:
-        case 39:
-        case 40:
-        case 41:
-        case 42:
-        case 43:
-        case 44:
-        case 45:
-        case 46:
-        case 47:
-        case 48:
-        case 49:
-        case 50:
-        case 51:
-        case 52:
-        case 53:
-        case 54:
-        case 55:
-        case 56:
-        case 57:
-        case 58:
-        case 59: 
-            cout<<"Earned Grade: F"<<endl;
+            cout<<"Cost of Breakers: $16000"<<endl;
             break;
-        case 60: 
-        case 61:
-        case 62:
-        case 63:
-        case 64:
-        case 65:
-        case 66:
-        case 67:
-        case 68:
-        case 69:
-            cout<<"Earned Grade: D"<<endl;
-            break;
-        case 70:
-        case 71:
-        case 72:
-        case 73:
-        case 74:
-        case 75:
-        case 76:
-        case 77:
-        case 78:
-        case 79:
-            cout<<"Earned Grade: C"<<endl;
-            break;
-        case 81:
-        case 82:
-        case 83:
-        case 84:
-        case 85:
-        case 86:
-        case 87:
-        case 88:
-        case 89:
-            cout<<"Earned Grade: B"<<endl;
-            break;
-        case 90:
-        case 91:
-        case 92:
-        case 93:
-        case 94:
-        case 95:
-        case 96:
-        case 97:
-        case 98:
-        case 99:
-        case 100:
-            cout<<"Earned Grade: A"<<endl;
-            break;
-
-        break;
-        
         }
     //Output the results
    

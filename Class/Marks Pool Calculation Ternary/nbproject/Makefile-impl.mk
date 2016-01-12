@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Marks Law Switch Statement
+PROJECTNAME=Marks Pool Calculation Ternary
 
 # Active Configuration
 DEFAULTCONF=Debug
