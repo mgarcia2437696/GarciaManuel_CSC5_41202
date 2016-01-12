@@ -23,23 +23,23 @@ int main(int argc, char** argv) {
     //Calculate or map inputs to outputs
     
     //Output the results
-    cout<<"Press return after entering a number. \n";
-    cout<<"Enter the number of pods:\n";
+    cout<<"Press return after entering a number."<<endl;
+    cout<<"Enter the number of pods:"<<endl;
     
     cin>> nPods;
     
-    cout<<"Enter the number of peas in a pod:\n";
+    cout<<"Enter the number of peas in a pod:"<<endl;
     cin>> npPod;
     int tPeas=nPods*npPod;
     cout<<"If you have ";
     cout<<nPods;
-    cout<<"pea pods\n";
+    cout<<"pea pods"<<endl;
     cout<<"and ";
     cout<<npPod;
-    cout<<" peas in each pod, then\n";
+    cout<<" peas in each pod, then"<<endl;
     cout<<"you have ";
     cout<< tPeas;
-    cout<<"peas in all the pods.\n";
+    cout<<"peas in all the pods."<<endl;
     
     //Exit stage right
     return 0;
