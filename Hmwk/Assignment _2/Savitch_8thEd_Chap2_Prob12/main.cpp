@@ -1,7 +1,8 @@
 /* 
+    File:   main.cpp
     Author: Manuel Garcia
     Created on January 13, 2016, 10:52 AM
-    Purpose:  Gross Income to Net Income and Dependants 
+    Purpose:  Calculate the Square Root by the Babylonian/Newton's Method
  */
 
 //System Libraries
@@ -9,44 +10,46 @@
 #include <iomanip>
 #include <cmath>
 using namespace std;
+
 //User Libraries
 
 //Global Constants
-
 
 //Function prototypes
 
 //Execution Begins Here
 int main(int argc, char** argv) {
-//Declare and initialize variables;
-int gIncome, depend, ndepend;
-
-//Input Data
-cout<<"What is your income? "<<endl;  
-cin>>gIncome;
-cout<<"How many dependant do you have?"<<endl;
-cin>>ndepend;   
-
-//Calculate
-depend=(ndepend*750);
-if (gIncome<=5000) {
-    cout<<"This is your Net Income "<<gIncome+depend<<endl;
- }else if(gIncome<=10000)
-     cout<<"This is your Net Income "<<gIncome-(gIncome*.1)+depend<<endl;
-else if(gIncome<=15000)
-     cout<<"This is your Net Income "<<gIncome-(gIncome*.15)+depend<<endl;
- else if(gIncome<=20000)
-     cout<<"This is your Net Income "<<gIncome-(gIncome*.2)+depend<<endl;
-else if(gIncome<=25000)
-     cout<<"This is your Net Income "<<gIncome-(gIncome*.25)+depend<<endl;
- else if(gIncome<=30000)
-     cout<<"This is your Net Income "<<gIncome-(gIncome*.30)+depend<<endl;
-else if(gIncome<=35000)
-     cout<<"This is your Net Income "<<gIncome-(gIncome*.35)+depend<<endl;
- else 
-     cout<<"This is your Net Income "<<gIncome-(gIncome*.4)+depend<<endl;
-//Output the Results
+    //Declare and initialize variables
+    float n;//Input the value to obtain it's square root
+    float r,guess;//Intermediate values which asymptotically approach sqrt(n)
+    float tol=0.001f;//Accuracy of the results/tolerance
+    int counter=0;//See how many loops it took to get the answer
     
-//Exit stage right
+    //Input data
+    cout<<"Input the value to compute the sqrt of?"<<endl;
+    cin>>n;
+    
+    //Approximate the square root first pass
+    guess=n/2;//Only perform once to start the process
+    r=n/guess;
+    guess=(guess+r)/2;
+    
+    //Output the results
+    cout<<"The input value      = "<<n<<endl;
+    cout<<"sqrt("<<n<<")="<<sqrt(n)<<endl;
+    
+    //Approximate the square root
+    do{
+        r=n/guess;
+        guess=(guess+r)/2;
+        counter++;
+    }while (abs((r-guess)/guess)*100>tol);//End the loop when close enough
+    
+    //Output the results
+    cout<<"The r     = "<<r<<endl;
+    cout<<"The guess = "<<guess<<endl;
+    cout<<"The loop executed "<<counter<<" times"<<endl;
+   
+    //Exit stage right
     return 0;
 }
