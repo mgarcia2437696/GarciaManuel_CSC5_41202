@@ -19,13 +19,14 @@ using namespace std;
 
 //Execution Begins Here
 int main(int argc, char** argv) {
-//The problem to solve
-    cout<<"Calculator to approximate Pi"<<endl;
-    cout<<"The approximation of Pi"<<endl<<endl;
+
 //Declare and initialize variables for etox
-    const unsigned char nTerms=50;
-    float tol=1e-50f, term=1, pi=4;//e^x
-    float nTerm=1;                     //Counter to determine how many terms
+    float apprxPI=1;//e^x
+    unsigned int nTerms;//Counter to determine how many terms
+    char sign=-1
+//Input the number of terms in the sequence
+    cout<<"Input the number of terms to approximate to "<<endl;
+    cout<<"The approximation of Pi"<<endl<<endl;
 //Calculate e^x
     for(nTerm=1;term>tol;term*=x/nTerm++,etox+=term);
     
