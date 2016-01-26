@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
     float quasqft, tesqft, ohsqft, tqsqft, oinsqft;   //Integers for Sq. Ft.
     float pqisqft, ptesqft, pohsqft, ptqsqft, poisqft;//Integers for Price Sq. Ft.
     int stlngth, pstfoot;                             //Integers for the steel
-    int addcost;                                      //Additional costs
+    float addcost;                                      //Additional costs
     float total;                                        //Total cost for the Material
     
     //Input the sq. feet
@@ -60,14 +60,14 @@ int main(int argc, char** argv) {
     cin>>addcost;
     
     //Calculate the Inputs
-     (quasqft*pqisqft)
+     total=(quasqft*pqisqft)
     +(tesqft*ptesqft)
-    +(ohsqft+pohsqft)
+    +(ohsqft*pohsqft)
     +(tqsqft*ptqsqft)
     +(oinsqft*poisqft)
     +(pstfoot*stlngth)
-    +(addcost)
-    =total;
+    +addcost;
+    
     
     //Output the results
     cout<<"The total would be $ "<<total<<endl;
