@@ -26,7 +26,7 @@ float save4(float,float,int);//For-Loops Banking with Pennies
 float save5(float,float,int);//Recursion, function calling itself
 float save6(float,int,float=0.05f);//Defaulted save function
 float save7(float,float,int);//For-Loops and static variable
-float save8(float,float,int,float&);//For-Loops and static variable
+void  save8(float,float,int,float&);//For-Loops and static variable
 
 //Execution Begins Here
 int main(int argc, char** argv) {
@@ -82,7 +82,7 @@ int main(int argc, char** argv) {
 //Output
 // fv->Future Value $'s
 //Note:  Using the power function and defaulting the interest
-float save8(float p,int n,float, &fv){
+float save8(float p,int n,float,fv){
     return p*pow((1+i),n);
 }
 

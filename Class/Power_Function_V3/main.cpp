@@ -17,13 +17,13 @@ using namespace std;
 //Global Constants
 
 //Function prototypes
-int pow(int&,int&);
+int pow(const int &,const int &);
 
 //Execution Begins Here
 int main(int argc, char** argv) {
     //Variables to be using in timing
     //Beginning and Ending of the integer vs. double function
-    unsigned int begi,endi,begd,endd,loop=400000000;
+    unsigned int begi,endi,begd,endd,loop=200000000;
     
     //Declare and initialize variables
     int x;//Base of the problem
@@ -72,7 +72,7 @@ int main(int argc, char** argv) {
 //  b->Integer Power-Exponent
 //Output
 //  c->Integer z=a^b
-int pow(int &a,int &b){
+int pow(const int &a,const int &b){
     if(b<=0)return 1;
     if(b==1)return a;
     int abd2=pow(a,b/2);
