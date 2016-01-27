@@ -1,7 +1,7 @@
 /* 
     File:   main.cpp
     Author: Manuel Garcia
-    Created on January 25, 2016, 08:35 AM
+    Created on January 27, 2016, 08:27 AM
     Purpose:  Power Function
  */
 
