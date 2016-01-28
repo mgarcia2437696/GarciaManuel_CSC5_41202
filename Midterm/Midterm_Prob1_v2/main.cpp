@@ -9,6 +9,7 @@
 #include <iostream>//I/O
 #include <cstdlib> //srand and rand function
 #include <ctime>   //time to set the random number seed
+#include <iomanip> //Set Width
 using namespace std;
 
 //User Libraries
@@ -23,28 +24,19 @@ int main(int argc, char** argv) {
     int xNumbr;
     
     //Input data
-    cout<<"Enter an Odd Number Between 3-9"<<endl;
+        
+    cout<<"Enter a Number < 50"<<endl;
     cin>>xNumbr;
     
     //Output the results
-    for (int i=1;i<=xNumbr; i++){
-     cout <<9<< "9       1";
-     cout<<"8     2";
-     cout<<"7   3";
-     cout<<"6 4";
-     cout<<"7   3";
-     cout<<"8     2";3
-     cout <<9<< "9       1";
+    int i;
+    for (int row=1;i<=xNumbr; row++){
+        for (int colms=1;colms<=xNumbr;colms++){
+            if(row==colms|| colms==(xNumbr+1)-row);
+              cout<<xNumbr  
+        }    
     }
-    for (int i=1;i<=xNumbr; i++){
-     cout <<7<< "9       1";
-    }
-    for (int i=1;i<=xNumbr; i++){
-     cout <<5<< "9       1";
-    }
-    for (int i=1;i<=xNumbr; i++){
-     cout <<3<< "9       1";
-    }
+    
  
 //Output the results
 
